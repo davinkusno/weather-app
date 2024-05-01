@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Weather Forecast</title>
+	<link rel="icon" href="/images/weather.png">
+	<link rel='stylesheet' href='/css/styles.css' />
+</head>
+
+<body>
+	{{>header}}
+	<div class="main-content">
+		<h2>How to Use the App</h2>
+		<h4>1. Using the Form:</h4>
+		To get the weather forecast for your location, simply type your location into the form provided in the main
+		page.
+		This could be your disctrict, city, state, or country.
+		Once you’ve entered your location, click on the ‘Search’ button to get your forecast.
+
+		<h4>2. Using the API:</h4>
+		Our app also provides an API that you can use to get weather forecasts. To use this, you can type a query string
+		into
+		the URL. The format for this is <code>https://davin-weather.vercel.app/weather?address=YourLocation</code>.
+		Replace
+		‘YourLocation’ with the location you want the forecast for.
+
+		For example, if you want the weather forecast for Jakarta, you would type
+		<code>https://davin-weather.vercel.app/weather?address=Jakarta</code> into the URL.
+
+		Once you’ve typed your query string, press enter to get the API response with your forecast.
+
+		<br />
+		<br />
+		If you have any other questions or need further assistance, feel free to contact our support team. Enjoy using
+		our Weather Forecast App!
+	</div>
+	{{>footer}}
+</body>
+
+</html>
